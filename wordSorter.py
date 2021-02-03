@@ -11,10 +11,10 @@ for word in words:
             listOfLists.append([])
 
     # Remove the '\n' from each word
-    word = word[0: len(word)-1]
+    word = "'" + word[0: len(word)-1] + "'"
 
     # Put each word into the list corresponing to its length.
-    listOfLists[len(word)].append(word)
+    listOfLists[len(word) - 2].append(word)
 
 inputFile.close()
 
